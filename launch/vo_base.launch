@@ -1,0 +1,17 @@
+<launch>
+	<arg name="IMU_topic" default="/ardrone/imu"/>
+	<arg name="MAG_topic" default="/ardrone/mag"/>
+
+    <node name="VO" 
+          pkg="roamvo" 
+          type="roamvo_node"
+          output="screen" 
+          launch-prefix="">
+
+			<param name="IMU_topic" value="$(arg IMU_topic)"/>    
+			<param name="MAG_topic" value="$(arg MAG_topic)"/>
+    	<param name="IMU_N_integration_steps" value="10"/>
+    	<param name="IMU_nominal_period" value="0.02"/>
+    </node>
+
+</launch>

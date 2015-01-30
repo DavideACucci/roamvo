@@ -1,0 +1,7 @@
+<launch>
+
+	<node name="MA" pkg="libviso2_matcher" type="matcher_node" output="screen" args="/ardrone/front/image_raw" launch-prefix=""/>
+	
+	<include file="$(find roamvo)/launch/vo_base.launch"/>
+
+</launch>

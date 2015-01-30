@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+	<name>roamvo</name>
+	<version>1.0.0</version>
+	<description>
+		Visual odometry system based on roamfree
+	</description>
+	
+	<maintainer email="davide.cucci@epfl.ch">Davide A. Cucci</maintainer>
+	<license>GPLv3</license>
+
+	<author>Davide A. Cucci</author>
+	
+	<build_depend>roscpp</build_depend>
+	<build_depend>tf</build_depend>
+	<build_depend>tf_conversions</build_depend>
+	<build_depend>roamfree</build_depend>
+	<build_depend>libvisio2_matcher_msg</build_depend>
+	
+	<buildtool_depend>catkin</buildtool_depend>
+</package>
